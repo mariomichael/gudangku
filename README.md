@@ -29,22 +29,22 @@ Virtual environment digunakan untuk mengisolasi package dan dependencies dari se
 
 Ya, sebenarnya kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment karena virtual environment lebih ditujukan untuk mengantisipasi segala masalah yang bisa terjadi pada proyek yang kita kerjakan, bukan merupakan syarat untuk berjalannya sebuah proyek Django. Namun tetap lebih baik menggunakan virtual environment untuk menghindari masalah-masalah di atas, terutama menghindari konflik package dengan versi yang berbeda dan menjaga dependensi. Selain itu akan lebih sulit untuk mengembangkan dan menguji proyek yang kita buat. <br />
 
-4. Jelaskan apakah itu MVC, MVT, MVVM dan perbedaan dari ketiganya.
+4. Jelaskan apakah itu MVC, MVT, MVVM dan perbedaan dari ketiganya. <br />
 
-a.	MVC (Model-View-Controller)
-MVC adalah sebuah pola desain arsitektur yang memisahkan sebuah aplikasi menjadi tiga komponen logika utama, yaitu model, view, dan controller. Penggunaan MVC bersifat lebih umum dan tidak terbatas pada pengembangan web, bisa giunakan untuk pengembangan desktop dan aplikasi seluler. View akan mengirim request ke controller, lalu controller merender view, controller akan memanipulasi model dan view juga akan menampilkan model.
-•	Model bertanggung jawab untuk mengurus data dan logika, model juga berisi informasi dan metode untuk memanipulasi data.
-•	View bertanggung jawab untuk menampilkan data kepada pengguna dari informasi yang diberikan model.
-•	Controller bertanggung jawab untuk mengelola alur logika aplikasi dan interaksi pengguna serta mengontrol model untuk memutuskan tampilan mana yang harus ditampilkan.
-b.	MVT (Model-View-Template)
-MVT adalah sebuah konsep arsitektur yang digunakan dalam pengembangan web untuk memisahkan komponen-komponen utama dari sebuah aplikasi menjadi beberapa bagian, yaitu model, view, dan template. Konsep ini membuat kode menjadi lebih terstuktur dan terorganisir.
-•	Model adalah komponen yang bertanggung jawab untuk mengatur dan mengelola data dari aplikasi. Model mewakili struktur data dan logika yang berada di belakang tampilan. Model menghubungkan aplikasi dengan basis data dan mengatur interaksinya.
-•	View adalah komponen yang bertanggung jawab untuk menangani logika presentasi dalam konsep MVT. View mengatur bagaimana data yang sebelumnya sudah dikelola oleh model akan ditampilkan. Jadi peran view adalah sebagai pengatur tampilan dan menyajikan data kepada pengguna yang diambil dari model.
-•	Template adalah komponen yang bertanggung jawab untuk mengatur tampilan antarmuka pengguna. Template memisahkan kode HTML yang membangun tampilan web dari logika aplikasi. Jadi template berfungsi untuk merancang tampilan yang diisi dengan data yang disajikan view yang diambil dari model.
-c.	MVVM (Model-View-ViewModel)
-MVVM adalah sebuah pola arsitektur pembuatan aplikasi berbasis antarmuka pengguna (User Interface (UI)) yang berfokus pada pemisahan antara kode untuk logika bisnis dan tampilan aplikasi. MVVM terbagi atas beberapa layer, yaitu model, view, dan ViewModel.
-•	Model adalah bagian yang bertanggung jawab untuk merepresentasikan data yang akan digunakan pada logika bisnis.
-•	View adalah bagian yang berisi UI dari aplikasi untuk mengatur bagaimana informasi akan ditampilkan sekaligus menampilkan informasi tersebut.
-•	ViewModel adalah bagian yang bertanggung jawab untuk berinteraksi dengan model dimana data yang ada akan diteruskan ke view. ViewModel mengubah data dari model agar cocok dengan format yang bisa digunakan view untuk mengelola logika tampilan. Bagian ini memungkinkan pengikatan dan pemisahan data yang kuat antara tampilan dan logika aplikasi.
+a.	MVC (Model-View-Controller) <br />
+MVC adalah sebuah pola desain arsitektur yang memisahkan sebuah aplikasi menjadi tiga komponen logika utama, yaitu model, view, dan controller. Penggunaan MVC bersifat lebih umum dan tidak terbatas pada pengembangan web, bisa giunakan untuk pengembangan desktop dan aplikasi seluler. View akan mengirim request ke controller, lalu controller merender view, controller akan memanipulasi model dan view juga akan menampilkan model. <br />
+•	Model bertanggung jawab untuk mengurus data dan logika, model juga berisi informasi dan metode untuk memanipulasi data. <br />
+•	View bertanggung jawab untuk menampilkan data kepada pengguna dari informasi yang diberikan model. <br />
+•	Controller bertanggung jawab untuk mengelola alur logika aplikasi dan interaksi pengguna serta mengontrol model untuk memutuskan tampilan mana yang harus ditampilkan. <br />
+b.	MVT (Model-View-Template) <br />
+MVT adalah sebuah konsep arsitektur yang digunakan dalam pengembangan web untuk memisahkan komponen-komponen utama dari sebuah aplikasi menjadi beberapa bagian, yaitu model, view, dan template. Konsep ini membuat kode menjadi lebih terstuktur dan terorganisir. <br />
+•	Model adalah komponen yang bertanggung jawab untuk mengatur dan mengelola data dari aplikasi. Model mewakili struktur data dan logika yang berada di belakang tampilan. Model menghubungkan aplikasi dengan basis data dan mengatur interaksinya. <br />
+•	View adalah komponen yang bertanggung jawab untuk menangani logika presentasi dalam konsep MVT. View mengatur bagaimana data yang sebelumnya sudah dikelola oleh model akan ditampilkan. Jadi peran view adalah sebagai pengatur tampilan dan menyajikan data kepada pengguna yang diambil dari model. <br />
+•	Template adalah komponen yang bertanggung jawab untuk mengatur tampilan antarmuka pengguna. Template memisahkan kode HTML yang membangun tampilan web dari logika aplikasi. Jadi template berfungsi untuk merancang tampilan yang diisi dengan data yang disajikan view yang diambil dari model. <br />
+c.	MVVM (Model-View-ViewModel) <br />
+MVVM adalah sebuah pola arsitektur pembuatan aplikasi berbasis antarmuka pengguna (User Interface (UI)) yang berfokus pada pemisahan antara kode untuk logika bisnis dan tampilan aplikasi. MVVM terbagi atas beberapa layer, yaitu model, view, dan ViewModel. <br />
+•	Model adalah bagian yang bertanggung jawab untuk merepresentasikan data yang akan digunakan pada logika bisnis. <br />
+•	View adalah bagian yang berisi UI dari aplikasi untuk mengatur bagaimana informasi akan ditampilkan sekaligus menampilkan informasi tersebut. <br />
+•	ViewModel adalah bagian yang bertanggung jawab untuk berinteraksi dengan model dimana data yang ada akan diteruskan ke view. ViewModel mengubah data dari model agar cocok dengan format yang bisa digunakan view untuk mengelola logika tampilan. Bagian ini memungkinkan pengikatan dan pemisahan data yang kuat antara tampilan dan logika aplikasi. <br />
 
 Perbedaan dari ketiganya adalah View pada MVT bertugas untuk menangani logika presentasi pada aplikasi, sedangkan View pada MVC dan MVVM bertugas untuk menampilkan data kepada pengguna yang diambil dari model (sebagai tampilan data). Selain itu perbedaan ketiganya terdapat pada bagian controller pada MVC, template pada MVT, dan ViewModel pada MVVM. Controller bertugas untuk mengatur alur logika aplikasi dan mengelola input pengguna, template digunakan untuk presentasi/menampilkan data kepada pengguna, dan ViewModel digunakan untuk mengelola dari dari model dan mengubahnya menjadi format yang sesuai tampilan, juga memiliki logika tambahan untuk tampilan. 
