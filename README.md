@@ -1,5 +1,5 @@
-1.	Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)!
-•	Membuat sebuah proyek Django baru.
+1.	Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)! <br />
+•	Membuat sebuah proyek Django baru. <br />
 •	Cara: Pertama, buat direktori baru dengan nama “gudangku”, sesuai dengan nama aplikasi diinginkan. Lalu aktifkan virtual environment yang bertujuan untuk mengisolasi package dan dependencies dari aplikasi sehingga tidak bertabrakan dengan versi lain yang ada di komputer. Kedua, siapkan dependencies dengan menginstallnya, lalu buat proyek Django dengan perintah “django-admin startproject gudangku .”. Ketiga, konfigurasi proyek dengan mengisi ALLOWED_HOSTS dengan “*” lalu terakhir jalankan servernya.
 •	Membuat aplikasi dengan nama main pada proyek tersebut.
 •	Cara: Menjalankan perintah “python manage.py startapp main” pada command prompt lalu mendaftarkan aplikasi main ke dalam  proyek dengan cara menambahkan ‘main’ ke dalam daftar aplikasi yang ada (INSTALLED_APPS).
