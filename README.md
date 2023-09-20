@@ -16,15 +16,15 @@ Setelah membuat kerangka web, sekarang form input data sudah siap dibuat. Pertam
 <br />
 Hasil Screenshot Postman <br />
 1. HTML <br />
-![Get HTML](get_html.png) <br />
+![Get HTML](get_html.jpeg) <br />
 2. JSON <br />
-![Get JSON](get_json.png) <br />
+![Get JSON](get_json.jpeg) <br />
 3. XML <br />
-![Get XML](get_xml.png) <br />
+![Get XML](get_xml.jpeg) <br />
 4. JSON by ID <br />
-![Get JSON by ID](get_json_by_id.png) <br />
+![Get JSON by ID](get_json_id.jpeg) <br />
 5. XML by ID <br />
-![Get XML by ID](get_xml_by_id.png) <br />
+![Get XML by ID](get_xml_id.jpeg) <br />
 <br />
 ========== TUGAS 2 ==========
 1.	Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)! <br />
