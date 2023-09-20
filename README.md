@@ -16,6 +16,7 @@ Setelah membuat kerangka web, sekarang form input data sudah siap dibuat. Pertam
 <br />
 Hasil Screenshot Postman <br />
 1. HTML <br />
+
 ![Get HTML](get_html.jpeg) <br />
 2. JSON <br />
 ![Get JSON](get_json.jpeg) <br />
