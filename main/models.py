@@ -11,6 +11,3 @@ class Product(models.Model):
     amount = models.IntegerField()
     description = models.TextField()
     date_added = models.DateField(auto_now_add=True)
-    # date_added = models.DateField(default=timezone.now)
-    # price = models.IntegerField()
-    # description = models.TextField()Z
