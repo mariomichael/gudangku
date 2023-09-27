@@ -1,13 +1,5 @@
 {% extends 'base.html' %}
-<!-- <h5>Application Name: </h5>
-<p>{{ app_name }}<p> -->
-<!-- <h1>{{ app_name }}</h1>
-<h5>Name: </h5>
-<p>{{ name }}<p>
-<h5>Class: </h5>
-<p>{{ class }}<p> -->
 
-<!-- tadinya ini base.html (yg ada di line pertama) -->
 
 {% block content %}
 <h1>{{app_name}}</h1>
@@ -33,12 +25,12 @@
         <tr>
             <td>{{product.name}}</td>
             <td>{{product.amount}}</td>
-            <a href="{% url 'main:increase_amount' %}">
+            <a href="{% url 'main:create_product' %}"> <!--sementara-->
                 <button>
                     +
                 </button>
             </a>
-            <a href="{% url 'main:decrease_amount' %}">
+            <a href="{% url 'main:create_product' %}"> <!--sementara-->
                 <button>
                     -
                 </button>
