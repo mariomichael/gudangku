@@ -33,6 +33,16 @@
         <tr>
             <td>{{product.name}}</td>
             <td>{{product.amount}}</td>
+            <a href="{% url 'main:increase_amount' %}">
+                <button>
+                    +
+                </button>
+            </a>
+            <a href="{% url 'main:decrease_amount' %}">
+                <button>
+                    -
+                </button>
+            </a>
             <td>{{product.description}}</td>
             <td>{{product.date_added}}</td>
         </tr>

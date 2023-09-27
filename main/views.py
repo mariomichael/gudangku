@@ -91,4 +91,8 @@ def logout_user(request):
     response.delete_cookie('last_login')
     return response
 
-# comment aagar bisa push 
+def increase_amount(request, id):
+    data = Product.objects.filter(pk=id)
+
+def decrease_amount(request, id):
+    data = Product.objects.filter(pk=id)
