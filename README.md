@@ -1,5 +1,5 @@
 ========== TUGAS 5 ==========
-1.	Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya. <br />
+1 - Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya. <br />
 <br />
 a.	Selector Element <br />
 Manfaat selector ini adalah untuk memungkinkan pengubahan properti untuk semua elemen yang memiliki tag HTML atau jenis yang sama. <br />
@@ -18,7 +18,7 @@ Manfaat selector ini adalah untuk menyeleksi semua elemen HTML dengan definisi s
 Selector ini tepat digunakan ketika kita ingin menerapkan gaya yang sama pada beberapa elemen yang berbeda sehingga bisa mengelompokkan beberapa selector jadi satu dan mengurangi jumlah kode yang ditulis. <br />
 <br />
 
-2.	Jelaskan HTML5 Tag yang kamu ketahui. <br />
+2 - Jelaskan HTML5 Tag yang kamu ketahui. <br />
 <br />
 Ada beberapa HTML5 Tag yang saya ketahui, diantaranya: <br />
 -	<!--...--> berfungsi untuk menyatakan comment/komentar<br />
@@ -35,17 +35,16 @@ Ada beberapa HTML5 Tag yang saya ketahui, diantaranya: <br />
 -	<img> berfungsi untuk memasukkan gambar ke halaman web<br />
 -	<link> berfungsi untuk memberikan keterangan referensi sumber<br />
 -	<p> berfungsi untuk memberikan keterangan bahwa teks tersebut harus ditampilkan sebagai paragraf<br />
--	<style> berfungsi untuk memberikan style pada suatu element seperti men-center-kan elemen<br />
--	<table> untuk menyatakan sebuah tabel<br />
--	<td> untuk menyatakan sel pada tabel<br />
-<br />
+-	<style> berfungsi untuk memberikan "style" pada suatu "element" seperti men-center-kan elemen  
+-	<table> untuk menyatakan sebuah tabel  
+-	<td> untuk menyatakan sel pada tabel  
 
-3.	Jelaskan perbedaan antara margin dan padding. <br />
+3 - Jelaskan perbedaan antara margin dan padding. <br />
 <br />
 Perbedaan antara margin dan padding terletak pada area yang mereka kosongkan. Margin mengosongkan area di sekitar border dan bersifat transparan, sedangkan padding mengosongkan area di sekitar konten (isi website) yang juga bersifat transparan. Jadi konten dengan border akan dibatasi oleh padding sedangkan border dengan area di luarnya lagi akan dibatasi oleh margin. Perbedaan lainnya adalah margin tidak memiliki pengaruh terhadap warna atau background elemen sedangkan padding akan mempengaruhi tata letak konten di dalam elemen. <br />
 <br />
 
-4.	Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya? <br />
+4 - Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya? <br />
 <br />
 Perbedaan antara kedua framework CSS yaitu Tailwind dan Bootstrap yang pertama adalah Tailwind membangun tampilan dengan menggabungkan kelas-kelas utilitas yang telah didefinisikan sebelumnya, sedangkan Bootstrap menggunakan gaya dan komponen yang telah didefinisikan yang juga memiliki tempilan yang sudah jadi dan dapat digunakan secara langsung. <br />
 Perbedaan kedua adalah Tailwind memiliki file CSS yang sedikit lebih kecil dari Bootstrap dan hanya akan memuat kelas-kelas utilitas yang ada, sedangkan Bootstrap memiliki file CSS yang lebih besar karena memuat banyak komponen yang telah didefinisikan. <br />
@@ -54,7 +53,7 @@ Perbedaan terakhir adalah Tailwind memerlukan pemahaman mendalam terhadap kelas-
 Sebaiknya kita menggunakan Bootstrap daripada Tailwind ketika kita ingin memiliki proses pengembangan yang lebih cepat karena komponen pada Bootstrap sudah didefinisikan sehingga siap pakai tanpa harus menulis kode CSS dari awal, ini akan mempersingkat waktu pengerjaan website, meskipun desainnya cenderung akan bersifat konsisten dan tidak sefleksibel Tailwind. Sedangkan Tailwind sebaiknya digunakan ketimbang Bootstrap ketika kita ingin memiliki fleksibilitas dan otoritas sangat besar terhadap desain dan tata letak elemen dalam aplikasi web yang sedang dibangun sehingga dapat menghasilkan desain yang unik dan murni. Jadi pada dasarnya pemilihan keduanya berdasarkan waktu pengerjaan proyek dan tingkat fleksibilitas desain web yang diharapkan. <br />
 <br />
 
-5.	Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial). <br />
+5 - Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial). <br />
 Checklist di atas sebenarnya hanya terdiri dari satu poin yaitu kustomisasi  desain template HTML yang telah dibuat di tugas 4 dengan menggunakan CSS atau frameworknya, namun checklist ini dibagi menjadi dua ketentuan yaitu kustomisasi halaman login, register, dan tambah inventori, serta kustomisasi halaman daftar inventori menjadi lebih berwarna atau menggunakan desain lain seperti penggunaan Card dengan Bootstrap. <br />
 <br />
 Untuk kustomisasi halaman login, register, dan tambah inventori, pertama saya menambahkan tag meta name = viewport agar halaman web saya dapat menyesuaikan ukuran dan perilaku perangkat yang saya gunakan. Setelah itu saya menambahkan Bootstrap CSS dan JavaScript dengan menambahkan link di bagian paling bawah section head. Sekarang saya siap menggunakan keduanya. <br />
