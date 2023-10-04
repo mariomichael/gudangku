@@ -1,4 +1,4 @@
-========== TUGAS 5 ==========
+========== TUGAS 5 ========== <br />
 1 - Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya. <br />
 <br />
 a.	Selector Element <br />
@@ -36,8 +36,8 @@ Ada beberapa HTML5 Tag yang saya ketahui, diantaranya: <br />
 -	<link> berfungsi untuk memberikan keterangan referensi sumber<br />
 -	<p> berfungsi untuk memberikan keterangan bahwa teks tersebut harus ditampilkan sebagai paragraf<br />
 -	<style> berfungsi untuk memberikan "style" pada suatu "element" seperti men-center-kan elemen  
--	<table> untuk menyatakan sebuah tabel  
--	<td> untuk menyatakan sel pada tabel  
+-	<t-a-b-l-e> untuk menyatakan sebuah tabel  
+-	<t-d> untuk menyatakan sel pada tabel  
 
 3 - Jelaskan perbedaan antara margin dan padding. <br />
 <br />
