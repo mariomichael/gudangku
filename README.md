@@ -1,3 +1,76 @@
+========== TUGAS 5 ==========
+1.	Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya. <br />
+<br />
+a.	Selector Element <br />
+Manfaat selector ini adalah untuk memungkinkan pengubahan properti untuk semua elemen yang memiliki tag HTML atau jenis yang sama. <br />
+Selector ini tepat digunakan ketika kita ingin menggunakan gaya yang sama ke semua elemen dengan jenis tertentu, seperti mengatur gaya dasar semua paragraf atau gambar dalam aplikasi web kita. <br />
+b.	Selector ID <br />
+Manfaat selector ini adalah untuk memilih elemen dengan ID tertentu yang bersifat unik dalam satu halaman web. <br />
+Selector ini tepat digunakan ketika ingin mengatur gaya untuk elemen tertentu yang bersifat unik dan tidak berlaku untuk semua elemen, misalnya mengatur font untuk header. <br />
+c.	Selector Class<br />
+Manfaat selector ini adalah untuk memungkinkan pengelompokkan elemen dengan karakteristik yang sama seperti berdasarkan class tertentu yang diberikan pada elemen. <br />
+Selector ini tepat digunakan untuk menerapkan gaya yang sama pada beberapa elemen dari class yang sama seperti tombol, form input, dan lain-lain. <br />
+d.	Selector Universal <br />
+Manfaat selector ini adalah untuk menyeleksi semua elemen HTML di sebuah halaman web. <br />
+Selector ini tepat digunakan untuk mengatur semua elemen secara menyeluruh dalam satu halaman web atau digunakan untuk mereset CSS. <br />
+e.	Selector Grouping <br />
+Manfaat selector ini adalah untuk menyeleksi semua elemen HTML dengan definisi style yang sama. <br />
+Selector ini tepat digunakan ketika kita ingin menerapkan gaya yang sama pada beberapa elemen yang berbeda sehingga bisa mengelompokkan beberapa selector jadi satu dan mengurangi jumlah kode yang ditulis. <br />
+<br />
+
+2.	Jelaskan HTML5 Tag yang kamu ketahui. <br />
+<br />
+Ada beberapa HTML5 Tag yang saya ketahui, diantaranya: <br />
+-	<!--...--> berfungsi untuk menyatakan comment/komentar<br />
+-	<br> berfungsi untuk menyisipkan satu baris baru<br />
+-	<button> berfungsi untuk membuat tombol tekan<br />
+-	<col> berfungsi untuk menentukan atribut  kolom pada tabel<br />
+-	<div> berfungsi untuk membuat bagian/section baru dalam dokumen<br />
+-	<b> berfungsi untuk menampilkan huruf tebal<br />
+-	<i> berfungsi untuk menampilkan huruf miring/italic<br />
+-	<form> berfungsi untuk menentukan sebuah form<br />
+-	<head> berfungsi untuk memberikan informasi tentang dokumen<br />
+-	<h1> - <h6> berfungsi untuk memberikan keterangan jenis header, semakin kecil angkanya maka ukuran hurufnya akan semakin besar<br />
+-	<html> berfungsi untuk menyatakan bahwa dokumen tersebut adalah dokumen HTML<br />
+-	<img> berfungsi untuk memasukkan gambar ke halaman web<br />
+-	<link> berfungsi untuk memberikan keterangan referensi sumber<br />
+-	<p> berfungsi untuk memberikan keterangan bahwa teks tersebut harus ditampilkan sebagai paragraf<br />
+-	<style> berfungsi untuk memberikan style pada suatu element seperti men-center-kan elemen<br />
+-	<table> untuk menyatakan sebuah tabel<br />
+-	<td> untuk menyatakan sel pada tabel<br />
+<br />
+
+3.	Jelaskan perbedaan antara margin dan padding. <br />
+<br />
+Perbedaan antara margin dan padding terletak pada area yang mereka kosongkan. Margin mengosongkan area di sekitar border dan bersifat transparan, sedangkan padding mengosongkan area di sekitar konten (isi website) yang juga bersifat transparan. Jadi konten dengan border akan dibatasi oleh padding sedangkan border dengan area di luarnya lagi akan dibatasi oleh margin. Perbedaan lainnya adalah margin tidak memiliki pengaruh terhadap warna atau background elemen sedangkan padding akan mempengaruhi tata letak konten di dalam elemen. <br />
+<br />
+
+4.	Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya? <br />
+<br />
+Perbedaan antara kedua framework CSS yaitu Tailwind dan Bootstrap yang pertama adalah Tailwind membangun tampilan dengan menggabungkan kelas-kelas utilitas yang telah didefinisikan sebelumnya, sedangkan Bootstrap menggunakan gaya dan komponen yang telah didefinisikan yang juga memiliki tempilan yang sudah jadi dan dapat digunakan secara langsung. <br />
+Perbedaan kedua adalah Tailwind memiliki file CSS yang sedikit lebih kecil dari Bootstrap dan hanya akan memuat kelas-kelas utilitas yang ada, sedangkan Bootstrap memiliki file CSS yang lebih besar karena memuat banyak komponen yang telah didefinisikan. <br />
+Perbedaan ketiga adalah Tailwind memberikan fleksibilitas dan adaptabilitas tinggi terhadap proyek sedangkan Bootstrap memberikan tampilan yang lebih konsisten di seluruh proyek karena Ia menggunakan komponen yang telah didefinisikan sebelumnya. <br />
+Perbedaan terakhir adalah Tailwind memerlukan pemahaman mendalam terhadap kelas-kelas utilitas dan bagaimana menggabungkannya untuk menghasilkan target yang ingin dicapai sehingga pembelajarannya akan lebih sulit, sedangkan Bootstrap memiliki komponen yang telah didefinisikan sehingga akan lebih cepat untuk dipelajari dan lebih ramah pemula. <br />
+Sebaiknya kita menggunakan Bootstrap daripada Tailwind ketika kita ingin memiliki proses pengembangan yang lebih cepat karena komponen pada Bootstrap sudah didefinisikan sehingga siap pakai tanpa harus menulis kode CSS dari awal, ini akan mempersingkat waktu pengerjaan website, meskipun desainnya cenderung akan bersifat konsisten dan tidak sefleksibel Tailwind. Sedangkan Tailwind sebaiknya digunakan ketimbang Bootstrap ketika kita ingin memiliki fleksibilitas dan otoritas sangat besar terhadap desain dan tata letak elemen dalam aplikasi web yang sedang dibangun sehingga dapat menghasilkan desain yang unik dan murni. Jadi pada dasarnya pemilihan keduanya berdasarkan waktu pengerjaan proyek dan tingkat fleksibilitas desain web yang diharapkan. <br />
+<br />
+
+5.	Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial). <br />
+Checklist di atas sebenarnya hanya terdiri dari satu poin yaitu kustomisasi  desain template HTML yang telah dibuat di tugas 4 dengan menggunakan CSS atau frameworknya, namun checklist ini dibagi menjadi dua ketentuan yaitu kustomisasi halaman login, register, dan tambah inventori, serta kustomisasi halaman daftar inventori menjadi lebih berwarna atau menggunakan desain lain seperti penggunaan Card dengan Bootstrap. <br />
+<br />
+Untuk kustomisasi halaman login, register, dan tambah inventori, pertama saya menambahkan tag meta name = viewport agar halaman web saya dapat menyesuaikan ukuran dan perilaku perangkat yang saya gunakan. Setelah itu saya menambahkan Bootstrap CSS dan JavaScript dengan menambahkan link di bagian paling bawah section head. Sekarang saya siap menggunakan keduanya. <br />
+<br />
+Kustomisasi yang pertama saya lakukan adalah menambahkan navbar pada aplikasi menggunakan Bootstrap dimana referensinya saya dapatkan dari dokumentasi Bootstrap. Saya menggunakan navbar yang menampilkan username di bagian kiri atas dan kolom search serta tombol Logout di kanan atas, namun untuk saat ini kolom search hanya sebagai penghias karena belum bisa difungsikan. Implementasi ini saya lakukan dengan membuat tag class berupa navbar bg-body-tertiary lalu sejumlah tag lainnya dimana saya juga menggunakan style untuk button dengan menambahkan class “btn btn-outline-success”. <br />
+<br />
+Setelah menambahkan navbar, kustomisasi lain yang saya lakukan adalah menambahkan fitur edit inventori pada aplikasi. Pertama saya membuat fungsi edit_product pada file views.py di main yang akan menerima input form dan melakukan post ulang dari input tersebut. Tidak lupa membuat berkas HTML dengan nama yang sama pada direktori templates di main untuk menerima input perubahan inventori. Setelah itu saya mengimport function edit_product yang telah saya buat sebelumnya di urls.py dan menambahkan pathnya ke urlpatterns pada file yang sama. Setelah itu saya menambahkan kode untuk menampilkan tombol edit pada setiap baris objek inventori. <br />
+<br />
+Saya juga menambah fitur untuk menghapus data produk yang langkahnya mirip dengan pembuatan fitur edit produk. Pertama buat fungsi delete_product di views.py yang ada pada folder main. Setelah itu import fungsi tersebut di urls.py dan tambahkan pathnya ke urlpatterns agar bisa diakses. Setelah itu tambahkan kode HTML untuk membuat tombol yang akan menjalankan fungsi delete_product tersebut. Saya menambahkan class pada button Edit dan Delete agar memiliki tampilan yang lebih menarik dengan cara mengcopy salah satu class dari button yang lain dan memasukkannya setelah tag button. <br />
+<br />
+Untuk halaman login sekarang sudah ada perubahan font, bentuk kotak input, dan model tombol, sedangkan halaman registrasi dan tambah inventori sudah ada perubahan font dan bentuk kotak input. Untuk halaman utama sendiri sudah banyak perubahan seperti yang sudah dijelaskan sebelumnya. <br />
+<br />
+Yang kedua, untuk kustomisasi halaman daftar inventori, saya menggunakan approach tambahan yaitu Card namun tetap mempertahankan tabel yang asli. Saya mendapat referensi dari dokumentasi Card Bootstrap v5.0 dimana saya memilih div class card-group dengan informasi dalam Card berupa judul, deskripsi, waktu update terakhir, dan jumlah item. Di Card tersebut saya paling banyak menggunakan tag div, p, dan h1-6 yang fungsinya sudah dijelaskan pada nomor sebelumnya. <br />
+<br />
+Itulah langkah-langkah saya dalam melakukan kustomisasi untuk webstite dari Tugas 4.
+
 ========== TUGAS 4 ==========
 1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya? <br />
 
