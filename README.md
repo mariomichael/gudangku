@@ -55,6 +55,7 @@ Sebaiknya kita menggunakan Bootstrap daripada Tailwind ketika kita ingin memilik
 <br />
 
 5 - Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial). <br />
+<br />
 Checklist di atas sebenarnya hanya terdiri dari satu poin yaitu kustomisasi  desain template HTML yang telah dibuat di tugas 4 dengan menggunakan CSS atau frameworknya, namun checklist ini dibagi menjadi dua ketentuan yaitu kustomisasi halaman login, register, dan tambah inventori, serta kustomisasi halaman daftar inventori menjadi lebih berwarna atau menggunakan desain lain seperti penggunaan Card dengan Bootstrap. <br />
 <br />
 Untuk kustomisasi halaman login, register, dan tambah inventori, pertama saya menambahkan tag meta name = viewport agar halaman web saya dapat menyesuaikan ukuran dan perilaku perangkat yang saya gunakan. Setelah itu saya menambahkan Bootstrap CSS dan JavaScript dengan menambahkan link di bagian paling bawah section head. Sekarang saya siap menggunakan keduanya. <br />
