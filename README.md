@@ -21,23 +21,24 @@ Selector ini tepat digunakan ketika kita ingin menerapkan gaya yang sama pada be
 2 - Jelaskan HTML5 Tag yang kamu ketahui. <br />
 <br />
 Ada beberapa HTML5 Tag yang saya ketahui, diantaranya: <br />
--	<!--...--> berfungsi untuk menyatakan comment/komentar<br />
--	<br> berfungsi untuk menyisipkan satu baris baru<br />
--	<button> berfungsi untuk membuat tombol tekan<br />
--	<col> berfungsi untuk menentukan atribut  kolom pada tabel<br />
--	<div> berfungsi untuk membuat bagian/section baru dalam dokumen<br />
--	<b> berfungsi untuk menampilkan huruf tebal<br />
--	<i> berfungsi untuk menampilkan huruf miring/italic<br />
--	<form> berfungsi untuk menentukan sebuah form<br />
--	<head> berfungsi untuk memberikan informasi tentang dokumen<br />
--	<h1> - <h6> berfungsi untuk memberikan keterangan jenis header, semakin kecil angkanya maka ukuran hurufnya akan semakin besar<br />
--	<html> berfungsi untuk menyatakan bahwa dokumen tersebut adalah dokumen HTML<br />
--	<img> berfungsi untuk memasukkan gambar ke halaman web<br />
--	<link> berfungsi untuk memberikan keterangan referensi sumber<br />
--	<p> berfungsi untuk memberikan keterangan bahwa teks tersebut harus ditampilkan sebagai paragraf<br />
--	<style> berfungsi untuk memberikan "style" pada suatu "element" seperti men-center-kan elemen  
--	<t-a-b-l-e> untuk menyatakan sebuah tabel  
--	<t-d> untuk menyatakan sel pada tabel  
+Catatan: tag ditulis di dalam kurung "<>" dan tag untuk comment tidak memiliki spasi antarkarakter, spasi di sini ditulis agar bentuk tag comment bisa terlihat <br />
+-	< !--...--> berfungsi untuk menyatakan comment/komentar<br />
+-	br berfungsi untuk menyisipkan satu baris baru<br />
+-	button berfungsi untuk membuat tombol tekan<br />
+-	col berfungsi untuk menentukan atribut  kolom pada tabel<br />
+-	div berfungsi untuk membuat bagian/section baru dalam dokumen<br />
+-	b berfungsi untuk menampilkan huruf tebal<br />
+-	i berfungsi untuk menampilkan huruf miring/italic<br />
+-	form berfungsi untuk menentukan sebuah form<br />
+-	head berfungsi untuk memberikan informasi tentang dokumen<br />
+-	h1 - h6 berfungsi untuk memberikan keterangan jenis header, semakin kecil angkanya maka ukuran hurufnya akan semakin besar<br />
+-	html berfungsi untuk menyatakan bahwa dokumen tersebut adalah dokumen HTML<br />
+-	img berfungsi untuk memasukkan gambar ke halaman web<br />
+-	link berfungsi untuk memberikan keterangan referensi sumber<br />
+-	p berfungsi untuk memberikan keterangan bahwa teks tersebut harus ditampilkan sebagai paragraf<br />
+-	style berfungsi untuk memberikan "style" pada suatu "element" seperti men-center-kan elemen  
+-	table untuk menyatakan sebuah tabel  
+-	td untuk menyatakan sel pada tabel  
 
 3 - Jelaskan perbedaan antara margin dan padding. <br />
 <br />
