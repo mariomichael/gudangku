@@ -1,3 +1,35 @@
+Tautan Website: mario-michael-tugas.pbp.cs.ui.ac.id
+========== TUGAS 6 ========== <br />
+
+1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming! <br />
+Perbedaan keduanya adalah pada synchronous programming, eksekusi tugas dilakukan secara berurutan dan satu per satu. Suatu tugas harus menunggu sampai eksekusi tugas sebelumnya selesai jika ingin dijalankan. Maka dari itu suatu tugas yang membutuhkan waktu lama untuk dikerjakan akan menyebabkan program menjadi lambat dalam synchronous programming karena tugas lain belum bisa dieksekusi.  <br />
+Berbanding terbalik dengan synchronous programming, asynchronous programming adalah paradigma programming yang memungkinkan beberapa tugas dieksekusi secara bersamaan, sehingga suatu tugas tidak harus menunggu tugas lain selesai jika ingin dieksekusi. Hal ini akan meningkatkan kinerja dan tingkat responsivitas website. <br />
+<br />
+
+2. Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini! <br />
+Paradigma event-driven programming adalah paradigma pemrograman dimana alur program ditentukan oleh event/peristiwa seperti tindakan user dalam menggunakan mouse, keyboard (mengetik keyboard), atau touchpad. <br />
+Contoh penerapan paradigma tersebut dalam tugas ini adalah ketika user mengklik tombol “Add Item by AJAX”, akan muncul sebuah form yang siap menerima input dari item yang akan dimasukkan oleh user. <br />
+<br />
+
+3. Jelaskan penerapan asynchronous programming pada AJAX! <br />
+<br />
+Penerapan asynchronous programming pada AJAX adalah ketika terjadi sebuah event, misalnya seperti GET dan POST pada HTTP, permintaan akan dikirim melalui AJAX dan AJAX akan meneruskan ke server, sedangkan user akan tetap bisa melakukan permintaan lain di waktu yang sama ketika AJAX melanjutkan permintaan tersebut ke server. Setelah itu user tinggal menunggu respon dari server melalui AJAX sambil melakukan event-event lainnya. <br />
+
+4. Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan! <br />
+Fetch API adalah API yang memungkinkan untuk membuat HTTP Request pada JavaScript. API ini menggunakan konsep promise untuk mengelola response dari server. Kelebihan menggunakan Fetch API adalah dia merupakan standar web modern yang dipakai saat ini dan karena merupakan bagian dari JavaScript, Fetch API tidak membutuhkan library dari luar. <br />
+Sedangkan jQuery adalah teknologu yang dirancang untuk penggunaan yang lebih kompleks karena terdapat banyak plugin. Kelebihannya adalah dapat compatible ke lebih banyak browser ketimbang AJAX. <br />
+Menurut saya, teknologi yang lebih baik digunakan adalah Fetch API jika proyek yang dikerjakan masih tahap kecil karena mengikuti standar modern dan lebih banyak fitur JavaScript yang bisa diimplementasikan. Namun  jika proyeknya besar, lebih baik menggunakan jQuery karena sudah banyak plugin yang tersedia untuk mengatasi hal tersebut. <br />
+<br />
+
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)! <br />
+Pertama saya masuk ke main.html yang ada pada folder templates, di sana saya mengubah implementasi card agar mengambil data menggunakan AJAX, dengan cara mengubah function refeshProducts pada bagian dalam script. <br />
+Setelah itu saya menghapus tabel untuk menampilkan objek yang telah saya buat setelahnya. <br />
+Ketiga, saya menambahkan function addProduct di bawah function yang baru saya ubah tersebut. Function ini akan mengurus masalah add product menggunakan AJAX. <br />
+Saya juga mengubah views.py dengan menambahkan function yang akan menghandle add item dari AJAX. Setelah itu saya menambahkan path yang dibutuhkan pada urls.py <br />
+Setelah itu saya melakukan perintah collectstatic untuk mengumpulkan file static yang diminta. <br />
+Terakhir, saya melakukan konfigurasi untuk mendeploy ke PaaS Fasilkom UI. <br />
+
+
 ========== TUGAS 5 ========== <br />
 1 - Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya. <br />
 <br />
