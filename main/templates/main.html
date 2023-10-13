@@ -31,7 +31,7 @@
         text-align: center;
     }
 </style>
-<table>
+<!-- <table>
     <tr>
         <th>Name</th>
         <th>Amount</th>
@@ -58,8 +58,8 @@
                         Delete
                     </button>
                 </a>
-            </td>
-              <div class="row row-cols-1 row-cols-md-3 g-4">
+            </td> -->
+              <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card h-100">
                     <div class="card-body">
@@ -81,10 +81,12 @@
                       <small class="text-muted">Last updated: {{product.date_added}}</small>
                     </div>
                   </div>
-                </div>
-        </tr>
+                </div> -->
+        <!-- </tr>
     {% endfor %}
-</table>
+</table> -->
+
+<table id="product_table"></table>
 
 <br />
 
@@ -100,4 +102,107 @@
     </button>
 </a>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Product</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form" onsubmit="return false;">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="col-form-label">Amount:</label>
+                        <input type="number" class="form-control" id="amount" name="amount"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="col-form-label">Description:</label>
+                        <textarea class="form-control" id="description" name="description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="button_add" data-bs-dismiss="modal">Add Product</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product by AJAX</button>
+
+<script>
+    async function getProducts() {
+        return fetch("{% url 'main:get_product_json' %}").then((res) => res.json())
+    }
+
+    async function refreshProducts() {
+        document.getElementById("product_table").innerHTML = ""
+        const products = await getProducts()
+        let htmlString = ``
+        // let htmlString = `<tr>
+        //     <th>Name</th>
+        //     <th>Price</th>
+        //     <th>Description</th>
+        //     <th>Date Added</th>
+        // </tr>`
+        products.forEach((item) => {
+            // htmlString += `\n<tr>
+            // <td>${item.fields.name}</td>
+            // <td>${item.fields.amount}</td>
+            // <td>${item.fields.description}</td>
+            // <td>${item.fields.date_added}</td>
+            // <td>
+            //     <button id = "edit-${item.pk}">Edit</button>
+            //     <button id = "delete-${item.pk}">Delete</button>
+            // </td>
+            htmlString += `\n
+                <div class="col mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">${item.fields.name}</h5>
+                      <h6 class="card-text">Amount: ${item.fields.amount}</h6>
+                      <p class="card-text">${item.fields.description}</p>
+                    
+                    <div>
+                        <button id = "edit-${item.pk}">Edit</button>
+                        <button id = "delete-${item.pk}">Delete</button>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated: ${item.fields.date_added}</small>
+                    </div>
+                  </div>
+                </div>`
+        })
+        
+        document.getElementById("product_table").innerHTML = htmlString
+        products.forEach((item) => {
+            document.getElementById(`edit-${item.pk}`).onclick = () => {
+            window.location.href = `edit-product/${item.pk}`
+            }
+            document.getElementById(`delete-${item.pk}`).onclick = () => {
+            fetch(`delete/${item.pk}`).then(refreshProducts)
+            }
+        })
+    }
+
+    refreshProducts()
+
+    function addProduct() {
+        fetch("{% url 'main:add_product_ajax' %}", {
+            method: "POST",
+            body: new FormData(document.querySelector('#form'))
+        }).then(refreshProducts)
+
+        document.getElementById("form").reset()
+        return false
+    }
+
+    document.getElementById("button_add").onclick = addProduct
+</script>
 {% endblock content %}
